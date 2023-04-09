@@ -22,6 +22,9 @@ export const WrapperButtonMore = styled(ButtonClick)`
 `
 
 export const WrapperProducts = styled.div`
+    width: 56.1%;
+    border-radius: 2px;
+    margin: auto;
     display: flex;
     gap: 14px;
     margin-top:20px;

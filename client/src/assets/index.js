@@ -1,0 +1,7 @@
+export {default as slider1} from './slider1.webp'
+export {default as slider2} from './slider2.webp'
+export {default as slider3} from './slider3.webp'
+export {default as imagesmall} from './imagesmall.webp'
+export {default as logoLogin} from './logo-login.png'
+export {default as test} from './test.webp'
+export {default as logo} from './logo.png'

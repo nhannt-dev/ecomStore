@@ -1,28 +1,41 @@
 import React from 'react'
-import { TypeProduct, Slider, CardItem, NavBar } from '../../components'
+import { TypeProduct, Slider, CardItem, ButtonClick } from '../../components'
 import { WrapperButtonMore, WrapperProducts, WrapperTypeProduct } from './style'
-import slider1 from '../../assets/slider1.webp'
-import slider2 from '../../assets/slider2.webp'
-import slider3 from '../../assets/slider3.webp'
+import { slider1, slider2, slider3 } from '../../assets'
 
-const category = ['TV', 'Tu lanh', 'Lo vi song', 'Dien thoai', 'Laptop']
+const category = ['TV', 'Tủ lạnh', 'Lò vi sóng', 'Điện thoại', 'Laptop']
 
 const Home = () => {
   return (
     <>
-      <div style={{ padding: '0 120px' }}>
+      <div style={{ padding: '0 120px', margin: '0 auto' }}>
         <WrapperTypeProduct>
           {category.map(el => (
             <TypeProduct name={el} key={el} />
           ))}
         </WrapperTypeProduct>
       </div>
-      <div id='container' style={{ backgroundColor: '#efefef', padding: '0 120px', height: '1000px' }}>
-        <Slider images={[slider1, slider2, slider3]} />
-        <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <CardItem />
+      <div className='body' style={{ width: '100%', backgroundColor: '#efefef' }}>
+        <div id='container' style={{ backgroundColor: '#efefef', padding: '0 120px', height: 'auto', width: '1920px', margin: '0 auto' }}>
+          <Slider images={[slider1, slider2, slider3]} />
+          <WrapperProducts>
+            <CardItem />
+            <CardItem />
+            <CardItem />
+            <CardItem />
+            <CardItem />
+            <CardItem />
+            <CardItem />
+            <CardItem />
+            <CardItem />
+            <CardItem />
+            <CardItem />
+            <CardItem />
+          </WrapperProducts>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+            <WrapperButtonMore textButton={'Xem thêm'} type='outline' styleBtn={{ border: '1px solid rgb(11, 116, 229)', color: 'rgb(11, 116, 229)', width: '240px', height: '38px', borderRadius: '4px' }} styleTextBtn={{ fontWeight: 500 }} />
+          </div>
         </div>
-            <NavBar />
       </div>
     </>
   )

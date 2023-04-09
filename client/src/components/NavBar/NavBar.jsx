@@ -47,7 +47,7 @@ const NavBar = () => {
             <WrapperContent>
                 {renderContent('text', ['Tu lanh', 'TV', 'MAYGIAT'])}
             </WrapperContent>
-            <WrapperContent>
+            {/* <WrapperContent>
                 {renderContent('checkbox', [
                     { value: 'a', label: 'A' },
                     { value: 'b', label: 'B' },
@@ -59,7 +59,7 @@ const NavBar = () => {
             </WrapperContent>
             <WrapperContent>
                 {renderContent('price', ['aishdias', 'asgduasgd'])}
-            </WrapperContent>
+            </WrapperContent> */}
         </div>
     )
 }

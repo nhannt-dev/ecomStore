@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyleNameProduct, WrapperReportText, WrapperPriceText, WrapperDiscountText, WrapperCardStyle } from './style'
 import { StarFilled } from '@ant-design/icons'
-import logo from '../../assets/logo.png'
+import { logo } from '../../assets'
 
 const CardItem = () => {
     return (
-        <WrapperCardStyle hoverable headStyle={{ width: '200px', height: '200px' }} bodyStyle={{ padding: '10px' }} style={{ width: 200 }} cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}>
+        <WrapperCardStyle hoverable headStyle={{ width: '200px', height: '200px' }} bodyStyle={{ padding: '10px' }} style={{ width: 177 }} cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}>
             <img src={logo} style={{ width: '68px', height: '14px', position: 'absolute', top: -1, left: -1, borderTopLeftRadius: '2px' }} />
             <StyleNameProduct>wwefadfwdf</StyleNameProduct>
             <WrapperReportText>
@@ -16,7 +16,7 @@ const CardItem = () => {
                 <span> | Đã bán 100+</span>
             </WrapperReportText>
             <WrapperPriceText>
-                1.000.000đ
+                <span style={{ marginRight: '8px' }}>1.000.000đ</span>
                 <WrapperDiscountText> -10%</WrapperDiscountText>
             </WrapperPriceText>
         </WrapperCardStyle>

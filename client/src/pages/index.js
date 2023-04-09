@@ -1,4 +1,8 @@
 export { default as NotFound } from './NotFound'
+export { default as ProductDetail } from './ProductDetail'
 export { default as Home } from './Home/Home'
 export { default as Product } from './Product/Product'
 export { default as Order } from './Order/Order'
+export { default as TypeProduct } from './TypeProduct/TypeProduct'
+export { default as SignUp } from './SignUp/SignUp'
+export { default as SignIn } from './SignIn/SignIn'
